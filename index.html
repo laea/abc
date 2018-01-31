@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="init();
+  main();">
+    <section class="container">
+      <section class="youtube">
+        <h1 class="youtube__heading">Youtube: Search & Watch</h1>
+        <div>
+          <form class="youtube__form" action="#">
+            <p><input class="youtube__textframe" type="text" id="search" autocomplete="off" /><p>
+            <p><input class="youtube__button" type="submit" value="Search"/><p>
+                <input class="youtube__button2" type="button" value="Refresh Page" onClick="window.location.reload()">
+          </form>
+        </div>
+        <div id="results" class="youtube__results"></div>
+      </section>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
